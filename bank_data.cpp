@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 
@@ -57,7 +56,6 @@ int main()
 
     return 0;
 }
-=======
 #include <iostream>
 using namespace std;
 
@@ -116,4 +114,3 @@ int main()
 
     return 0;
 }
->>>>>>> e52a32a32f3938a711762008cf986f15fb28bc42
