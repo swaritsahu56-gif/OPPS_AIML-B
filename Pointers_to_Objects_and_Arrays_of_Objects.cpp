@@ -21,20 +21,25 @@ private:
     int rollNo;
     string name;
 public:
-    Student(int roll, string n) {
-        rollNo = roll;
-        name = n;
+    void getData() {
+        cin >> rollNo >> name;
     }
     void display() {
         cout << rollNo << " " << name << endl;
     }
 };
-int main(){
-    Student s1(101, "Amit");
-    Student s2(102, "Ravi");
-    Student* ptr = &s1;
-    ptr->display();
-    ptr = &s2;
-    ptr->display();
-
+int main() {
+    Student students[2];
+    Student* ptr;
+    for (int i = 0; i < 2; i++) {
+        students[i].getData();
+    }
+    ptr = students;
+    for (int i = 0; i < 2; i++) {
+        ptr->display();
+        ptr++;
+    }
+    return 0;
 }
+
+
